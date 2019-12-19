@@ -5,11 +5,6 @@ from tkinter import *
 import tkinter as tk
 from bs4 import BeautifulSoup
 
-
-def show_entry_fields():
-    print("First Name: %s\nLast Name:" % (e1.get()))
-
-
 def get_stream():
     search_query = urllib.parse.quote(e1.get())
     url = "https://www.youtube.com/results?search_query=" + search_query
