@@ -1,9 +1,9 @@
 from __future__ import unicode_literals
 import urllib.request
 import youtube_dl
-from tkinter import *
 import tkinter as tk
 from bs4 import BeautifulSoup
+
 
 def get_stream():
     search_query = urllib.parse.quote(e1.get())
@@ -42,6 +42,8 @@ def get_stream():
 if __name__ == '__main__':
     master = tk.Tk()
     master.geometry('600x400')
+    master.title("YouTube downloader")
+    master.iconbitmap(r'music_PR8_icon.ico')
 
     tk.Label(master, text='Song name:').grid(row=0)
 
